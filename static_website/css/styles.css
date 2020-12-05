@@ -1664,7 +1664,8 @@ strong {
     }
     .header{
         padding: 10px;
-        height: 100%;
+        height: auto;
+        max-height: 650px;
     }
     .ph-t2{
         margin-top: -10px;
