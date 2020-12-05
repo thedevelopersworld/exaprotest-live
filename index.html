@@ -57,11 +57,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button"
                         aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'terms-conditions' %}"><span class="item-text">Terms
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #40006e;">
+                        <a class="dropdown-item" href="{% url 'terms-conditions' %}" style="color: white;"><span class="item-text">Terms
                                 Conditions</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="{% url 'privacy-policy' %}"><span class="item-text">Privacy
+                        <a class="dropdown-item" href="{% url 'privacy-policy' %}" style="color: white;"><span class="item-text">Privacy
                                 Policy</span></a>
                     </div>
                 </li>
@@ -115,13 +115,20 @@
 
 
     <!-- Pricing -->
-    <div id="pricing" class="cards-2" style="margin-top: 160px;">
+    <div id="pricing" class="cards-2">
         <div class="container conpur" style="font-family: Verdana, Geneva, Tahoma, sans-serif !important;">
             <div class="row">
                 <div class="col-lg-12"><br><br>
                     <center>
                         <h2 class="ph3">Choose your plan</h2>
-                    </center>
+                        <style>
+                            @media(max-width: 700px){
+                                .ph3{
+                                    max-width: 250px;
+                                }
+                            }
+                        </style>
+                    </center><br>
                 </div>
                 <div class="cards" style="margin-top: 0px !important;">
                     <div class="purchasecard">
@@ -188,7 +195,7 @@
     </div>
 
     <!-- Video -->
-    <div class="container" style="margin-top: 140px;">
+    <div class="container">
         <div class="basic-3" id="video">
             <div class="container">
                 <div class="row">
@@ -222,12 +229,12 @@
     </div>
 
     <!-- About -->
-    <div id="about" class="basic-4" >
+    <div id="about" class="basic-4" style="margin-top: -100px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>About The Team</h2>
-                    <p class="p-heading p-large"> Our focus is on providing the best user experience for our
+                    <p class="p-heading p-large" style="padding: 20px;"> Our focus is on providing the best user experience for our
                         employees or students. With a team of 6 dedicated, friendly Developers we strive every day
                         to
                         improve our us and give you excellent support. We do this with a smile, and a cup of coffee
@@ -362,7 +369,7 @@
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="form-2">
+    <div id="contact" class="form-2" style="margin-top: -100px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -420,7 +427,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer" style="padding: 15px; margin-top: 130px;">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -501,11 +508,21 @@
         </div>
     </div>
 
-    <script>
+    <style>
+        @media(max-width: 500px){
+            .turquoise{
+                display:none;
+            }
+            .htext{
+                margin-top: -80px !important;
+            }
+        }
+    </style>
+    <!-- <script>
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         }, false);
-    </script>
+    </script> -->
 
 </body>
 
