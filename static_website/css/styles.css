@@ -632,7 +632,7 @@ screen and (-ms-high-contrast: none) {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-    color: #ff006a;
+    color: #000000;
 }
 
 
@@ -661,15 +661,16 @@ screen and (-ms-high-contrast: none) {
     margin-top: 0;
     border: none;
     border-radius: 0.25rem;
+    background-color: #ff006a;
 }
 
 .navbar-custom .dropdown-item {
-    color: #393939;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .navbar-custom .dropdown-item:hover {
-    background-color: #fff;
+    background-color: #ff006a;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -677,7 +678,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
-    color: #40006e;
+    color: #000000;
 }
 
 .navbar-custom .dropdown-items-divide-hr {
