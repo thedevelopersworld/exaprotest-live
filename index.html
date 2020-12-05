@@ -264,7 +264,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="static_website/images/ayushi.jpg'" alt="alternative">
+                            <img class="img-fluid" src="static_website/images/ayushi.jpg" alt="alternative">
                         </div>
                         <p class="p-large"><strong>Ayushi Thakur</strong></p>
 
@@ -336,7 +336,7 @@
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="static_website/images/sejal.jpeg' %}" alt="alternative">
+                            <img class="img-fluid" src="static_website/images/sejal.jpeg" alt="alternative">
                         </div>
                         <p class="p-large"><strong>Sejal Puraswani</strong></p>
 
@@ -386,7 +386,6 @@
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false" style="margin-top: -20px;"
                         action="{% url 'contact' %}" method="POST">
-                        {% csrf_token %}
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" name="uname" required>
                             <label class="label-control" for="cname">Name</label>
