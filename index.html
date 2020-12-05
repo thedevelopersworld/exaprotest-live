@@ -28,17 +28,17 @@
         </div>
     </div>
 
-    <!-- Navigation -->
+   <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <a class="navbar-brand logo-image" href="#header"
-            style="text-decoration: none;font-size: 18px; color: rgb(241, 0, 0);">
+        <a class="navbar-brand logo-image navlogo" href="#header"
+            style="text-decoration: none;font-size: 26px; font-weight: 700; ">ExaPro
+            <!-- <img src="{% static 'static_website/images/logo2.jpg' %}" class="logo" style="width: 40px; height: 40px; object-fit: cover; border-radius:100%;"> -->
         </a>
-
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
+            <span class="navbar-toggler-awesome fas fa-bars" style="font-size: 25px;"></span>
+            <span class="navbar-toggler-awesome fas fa-times" style="font-size: 25px;"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -57,11 +57,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button"
                         aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #40006e;">
-                        <a class="dropdown-item" href="{% url 'terms-conditions' %}" style="color: white;"><span class="item-text">Terms
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'terms-conditions' %}"><span class="item-text">Terms
                                 Conditions</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="{% url 'privacy-policy' %}" style="color: white;"><span class="item-text">Privacy
+                        <a class="dropdown-item" href="{% url 'privacy-policy' %}"><span class="item-text">Privacy
                                 Policy</span></a>
                     </div>
                 </li>
