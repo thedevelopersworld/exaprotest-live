@@ -1634,6 +1634,9 @@ strong {
 .ph-u {
     margin-top: -150px;
 }
+.navlogo{
+    display: none;
+}
 
 @media(max-width: 990px){
     .ph-u {
@@ -1663,6 +1666,10 @@ strong {
     }
     .ph-t2{
         margin-top: -10px;
+    }
+    .navlogo{
+        color: white !important;
+        display: block;
     }
 }
 
