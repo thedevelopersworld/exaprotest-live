@@ -1659,13 +1659,12 @@ strong {
         color: rgb(255, 255, 255);
     }
     .htext{
-        margin-top: 20px !important;
+        margin-top: 0px !important;
         margin-left: 0px !important
     }
     .header{
         padding: 10px;
         height: auto;
-        max-height: 700px;
     }
     .ph-t2{
         margin-top: -10px;
@@ -1676,7 +1675,47 @@ strong {
     }
 }
 
+@media(max-width: 1220px){
+    .header{
+        height: 650px;
+    }
+}
 
+@media(max-width: 1180px){
+    .header{
+        height: 650px;
+    }
+}
+
+@media(max-width: 1130px){
+    .header{
+        height: 600px;
+    }
+}
+
+@media(max-width: 990px){
+    .header{
+        height: 500px;
+    }
+}
+@media(max-width: 764px){
+    .header{
+        height: 550px;
+    }
+}
+@media(max-width: 467px){
+    .hcontainer{
+        padding-right: 30px;
+    }
+    .header{
+        height: 800px;
+    }
+}
+@media(max-width: 414px){
+    .header{
+        height: 800px;
+    }
+}
 
 
 
