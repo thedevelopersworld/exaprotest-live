@@ -1116,10 +1116,7 @@ a:hover.back-to-top {
     background-color: #f9fafc;
 }
 
-
-
-
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
     .p-heading {
         width: 85%;
@@ -1626,117 +1623,51 @@ strong {
 
 .header {
     padding: 30px;
-    height: 770px;
+    height: auto;
     margin-bottom: 50px;
 }
 
-.htext{
-    margin-top: 130px !important; 
-    margin-left: -50px !important;
+.hcontainer{
+    margin-left: auto !important;
 }
 
 .ph-u {
     margin-top: -150px;
 }
 
-@media (max-width: 1050px) {
-    .ph-u {
-        margin-top: -170px;
-    }
-    .turquoise{
-        margin-top: 150px;
-    }
-    .header {
-        background-color: #ffffff;
-        height: 650px;
-    }
-    .htext{
-        margin-left: 20px !important;
-    }
-}
-
-@media(max-width: 991px){
-    body{
-        padding:10px;
-    }
-    .turquoise{
-        color: #40006e;
-    }
-    .ph-u{
-        margin-top: -100px;
-    }
-    .ph1 {
-        color: black;
-    }
-    .header {
-        background-color: #ffffff;
-        height: 500px !important;
-    }
-    .htext{
-        margin-top: 40px !important;
-        margin-left: 20px !important;
-    }
-}
-
-
-@media (max-width: 793px) {
+@media(max-width: 990px){
     .ph-u {
         margin-top: -50px;
     }
-    .header .ph1,
-    .ph2 {
-        color: black;
-    }
-
-    .header{
-        height: 400px;
-        margin-bottom:  100px !important;
+    .headlogo{
+        font-size: 2.8rem;
+        color: #ff006a;
     }
     .header-text{
         margin-top: 0px !important; 
         margin-left: 0px !important;
     }
+    .hcontainer{
+        margin: 15px !important;
+    }    
+    .header .ph1,
+    .ph2 {
+        color: black;
+    }
     .htext{
         margin-top: 0px !important;
-        margin-left: 0px !important;
+        margin-left: 0px !important
+    }
+    .header{
+        padding: 10px;
+    }
+    .ph-t2{
+        margin-top: -10px;
     }
 }
 
 
-@media (max-width: 465px) {
 
-    .header {
-        height: 400px;
-        margin-bottom: 100px ;
-    }
-    
-}
-
-@media (max-width: 400px) {
-
-    .header {
-        height: 400px;
-        margin-bottom: 160px ;
-    }
-    
-}
-
-@media (max-width: 340px) {
-    .ph-u {
-        margin-top: -50px;
-    }
-    .header {
-        height: 500px;
-        margin-bottom: 100px ;
-    }
-    
-}
-
-@media (max-width: 328px) {
-    .ph-u {
-        margin-top: -50px;
-    }
-}
 
 
 /* end of Custom CSS*/
