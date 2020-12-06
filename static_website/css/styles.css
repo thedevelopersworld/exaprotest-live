@@ -603,8 +603,6 @@ screen and (-ms-high-contrast: none) {
 .navbar-custom {
     background-color: #ff006a;
     /* box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1); */
-    top: 0px;
-    position: sticky !important;
     font: 600 0.875rem/0.875rem "Raleway", sans-serif;
     transition: all 0.2s;
 }
