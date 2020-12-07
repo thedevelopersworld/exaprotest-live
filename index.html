@@ -504,10 +504,29 @@
         </div>
     </div>
 
+        <div class="cookie-consent" id="consent">
+        <p> This website uses cookies to improve your experience. <a href="{% url 'privacy-policy' %}"> Learn
+                more</a><button type="button" class="btn" onclick="chide();">Got it!</button></p>
+    </div>
+
+
     <script>
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         }, false);
+
+        setTimeout(() => {  
+            if (localStorage.getItem("consent") !="true") {
+            var cb = document.getElementById('consent');
+            cb.style['display'] = "block";
+        } }, 5000);
+        
+
+        function chide() {
+            var cb = document.getElementById('consent');
+            localStorage.setItem("consent", "true");
+            cb.style['display'] = "none";
+        }
     </script>
 
 </body>
