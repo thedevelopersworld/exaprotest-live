@@ -504,26 +504,27 @@
         </div>
     </div>
 
-        <div class="cookie-consent" id="consent">
-        <p> This website uses cookies to improve your experience. <a href="{% url 'privacy-policy' %}"> Learn
-                more</a><button type="button" class="btn" onclick="chide();">Got it!</button></p>
+     <div class="stickyCookieAlert" id="stickyCookieAlert">
+        <span class="cookieText">This website is using cookies. By continuing to browse, you are agreeing to our use of
+            cookies as explained in our <a class="a-cookie" href="{% url 'cookie-policy' %}">Cookie&nbsp;Policy</a>.</span>
+        <a id="cookie-consent" type="button" onclick="chide();">Ok</a>
     </div>
-
-
+							       
     <script>
-        document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        }, false);
+        // document.addEventListener("contextmenu", function (e) {
+        //     e.preventDefault();
+        // }, false);
 
-        setTimeout(() => {  
-            if (localStorage.getItem("consent") !="true") {
-            var cb = document.getElementById('consent');
-            cb.style['display'] = "block";
-        } }, 5000);
-        
+        setTimeout(() => {
+            if (localStorage.getItem("consent") != "true") {
+                var cb = document.getElementById('stickyCookieAlert');
+                cb.style.display="block";
+            }
+        }, 5000);
+
 
         function chide() {
-            var cb = document.getElementById('consent');
+            var cb = document.getElementById('stickyCookieAlert');
             localStorage.setItem("consent", "true");
             cb.style['display'] = "none";
         }
