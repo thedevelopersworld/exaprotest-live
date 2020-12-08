@@ -1629,7 +1629,6 @@ strong {
 }
 
 .header {
-    background-color: #1c002f;
     padding: 30px;
     height: auto;
     margin-bottom: 50px;
@@ -1901,6 +1900,7 @@ strong {
     }    
 
     .header{
+        background-image: linear-gradient(to right, #08000e, #40006e);
         height: 550px;
     }
 
