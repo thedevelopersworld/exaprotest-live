@@ -675,8 +675,13 @@ screen and (-ms-high-contrast: none) {
     text-decoration: none;
 }
 
+.navbar-custom .dropdown-item:active {
+    background-color: rgb(255, 255, 255);
+}
+
+
 .navbar-custom .dropdown-item:hover {
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -692,7 +697,6 @@ screen and (-ms-high-contrast: none) {
     height: 1px;
     margin: 0.75rem auto 0.725rem auto;
     border: none;
-    background-color: #c4d8dc;
     opacity: 0.2;
 }
 
@@ -1549,6 +1553,7 @@ a:hover.back-to-top {
 .purchasebtn {
     background-color: rgb(255, 0, 106);
     border: none;
+    color: white;
     text-decoration: none;
 }
 
@@ -1599,7 +1604,6 @@ strong {
 
 .active1 .purchasebtn {
     text-decoration: none;
-    color: rgb(20, 141, 255);
     background-color: white;
 }
 
@@ -1686,6 +1690,7 @@ strong {
         margin-left: 0px !important
     }
     .header{
+        background-image: linear-gradient(to right, #08000e, #40006e);
         padding: 10px;
         height: auto;
     }
@@ -1906,8 +1911,12 @@ strong {
 
     .pricing{
         padding-top: 10px;
+        margin-top: -70px;
     }
-
+    .pricing .row{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
     .video{
         padding-top: 10px;
         padding-left: 20px;
@@ -1929,6 +1938,7 @@ strong {
         margin: 20px;
         margin-top: -100px;
     }
+  
 }
 @media(max-width: 467px){
     .htext{
@@ -1941,6 +1951,9 @@ strong {
     .header{
         height: auto;
         max-height: 700px;
+    }
+    .copyright{
+        padding: 10px;
     }
 }
 
