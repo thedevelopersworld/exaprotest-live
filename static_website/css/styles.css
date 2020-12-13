@@ -1581,8 +1581,8 @@ strong {
 }
 
 .purchasecard:hover .purchasebtn {
-    color: white;
-    background-color: rgb(255, 0, 106);
+    color:#ff006a;
+    background-color: rgb(255, 255, 255);
 }
 
 .purchasecard i {
